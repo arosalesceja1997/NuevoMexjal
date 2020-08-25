@@ -1,0 +1,516 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'IBM Plex Sans', sans-serif;
+  /* font-weight: 500; */
+}
+
+p{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.padding{
+  padding: 0 15px 30px 15px;
+}
+
+input{
+  outline: none;
+}
+
+a{
+  outline: none;
+}
+
+.me-container{
+  width: 100%;
+}
+
+/* Nav bar */
+/* TODO:Este se modifica para cambiar a desktop */
+.me-menu{
+  padding: 0 16px 0px 16px;
+  width: calc(100% - 32px);
+}
+
+.me-menu-encabezado{
+  padding: 40px 0 7px 0;
+  background-color: transparent;
+}
+
+.me-menu-encabezado > div{
+  float: left;
+  width: 50%;
+  background-color: transparent;
+}
+
+.me-menu-encabezado > div:first-child > h3{
+  float: left;
+  display: block;
+}
+
+.me-menu-encabezado > div:last-child > h3{
+  float: right;
+  display: block;
+}
+
+.me-nav-icons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.me-nav-icons > object{
+  padding: 0 5px;
+}
+
+.me-top-data{
+  height: 278px;
+}
+
+.me-menu-movil{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: red;
+  border-radius: 35px;
+  display: block !important;
+  padding: 25px 15px;
+}
+
+.me-menu-movil > li{
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.me-flecha{
+  float: right;
+  fill: white;
+}
+
+/* TODO:Se canvia para ajustar en vista desktop */
+.me-menu > ul {
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.me-menu > ul > li{
+  margin-left: 10px;
+  letter-spacing: 0.95px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.me-menu > ul > li > a{
+  text-decoration:none;
+  color: black;
+  font-size: 16px;
+}
+
+.me-menu > ul > li > a:hover{
+  color: white;
+}
+
+/* Buttons */
+.ma-buttons{
+  z-index: 0;
+  position: relative;
+  margin-top: 25px;
+  height: 54px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.ma-buttons > input{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 35px;
+  padding: 0 25px 0 25px;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ma-buttons > input:hover{
+  background-color: white;
+}
+
+.ma-btn-transiton{
+  position: absolute;
+  top: 0;
+  left: 160px;
+  height: 46px;
+  width: 60px;
+  z-index: 0;
+  border-radius: 0 35px 35px 0;
+  border: 2px solid black;
+}
+
+/* Seccion de data sin fondo */
+.me-only-data{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(100% - 32px);
+  margin: 50px 16px;
+}
+
+/* TODO:Para escritorio */
+.me-only-data > div{
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.me-section{
+  padding: 5px 0 50px 0;
+  /* height: 650px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.me-section-img {
+  padding: 25px 16px;
+  align-items: center;
+}
+
+.me-section-img > img{
+  display: block;
+  width: 100%;
+  height: 243px;
+  border-radius: 35px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+.me-section-logo{
+  padding-bottom: 10px;
+  background-color: transparent;
+  /* margin-left: -15px; */
+}
+
+.me-section-data{
+  padding: 25px 15px;
+}
+/* End seccion */
+
+/* Footer */
+.me-footer{
+  margin-top: -2px;
+  padding: 25px 16px;
+  background-color: black;
+}
+
+.me-footer > div{
+  background-color: transparent;
+}
+
+.me-footer-icons {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.me-footer-icons > ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.me-footer-icons > ul > li{
+  padding: 5px;
+  font-size: 25px;
+  color: white;
+}
+
+.me-social > li > img{
+  width: 25px;
+  height: 25px;
+}
+/* End footer */
+
+/* Background color */
+.azul{
+  background-color: #5597FF;
+}
+
+.verde{
+  background-color: #22CE6B;
+}
+
+.naranja{
+  background-color: #FFAD4E;
+}
+
+.rojo{
+  background-color: #FF4343;
+}
+
+.negro{
+  background-color: #1D1D1D;
+}
+/* End background color */
+
+.me-line{
+  height:2px;
+  border-width:0;
+  background-color:black;
+  margin: 25px 0 10px 0;
+}
+
+/* Fonts H1,H2,H3,H4,H5 */
+h1{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3{
+  font-weight: 700;
+}
+
+h4{
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* Data */
+.me-data {
+  padding: 40px 15px 70px 15px;
+}
+/* End data */
+
+
+
+
+/* ------------------------------ HOME ----------------------------- */
+/* Contact */
+#me-contact{
+  background-color: #5597FF;
+  padding: 40px 15px 70px 15px;
+}
+/* End contact */
+
+/* Data */
+.me-data > p:not(:last-child){
+  padding-bottom: 25px;
+}
+/* End data */
+
+/* Maps */
+#me-maps{
+  width: calc(100% - 32px);
+  padding: 0px 16px;
+  background: white;
+  background: -moz-linear-gradient(top,  white 0%, white 49%, black 39%, black 39%, black 39%, black 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  white 0%, white 49%,black 39%,black 39%,black 39%,black 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  white 0%, white 49%,black 39%,black 39%,black 39%,black 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='black',GradientType=0 ); /* IE6-9 */
+}
+
+#me-maps > div{
+  background-color: transparent;
+}
+
+#me-maps > div > img{
+  object-fit: none;
+  /* object-position: 100% 100%; */
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 35px;
+  height: 443px;
+  border-radius: 35px;
+}
+
+.me-img-maps{
+  position: relative;
+  width: 100%;
+}
+
+.me-img-maps > input{
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 225px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 35px;
+  background-color: #2f3436;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  overflow-y: none;
+}
+
+/* End maps */
+
+.me-section-data{
+  padding: 25px 100px 0px 15px !important;
+}
+
+/* -------------------------- ASSISTMED -------------------------------- */
+.me-top-data{
+  margin-top: -2px;
+  width: auto;
+  height: 285px;
+}
+
+.me-top-data > div:not(:last-child){
+  /* width: calc(100% - 200px); */
+  background-color: transparent;
+}
+
+/* No more */
+#me-no-more{
+  width: 100%;
+  padding: 0 0 50px 0;
+}
+
+#me-no-more >  div{
+  padding: 10px 16px;
+}
+
+.me-img > img{
+  border-radius: 35px;
+  width: 100%;
+  height: 243px;
+  object-fit: cover;
+}
+/* End no more */
+
+/* Assist seguros */
+#me-assist-seguros{
+  width: 100%;
+  /* background-color: #ff7b7b; */
+  position: relative;
+  height: 150vh;
+}
+
+.me-slider{
+  position: absolute;
+  padding: 45px 16px;
+  width: calc(200% - 16px);
+  background-color: #ff7b7b;
+  top: 32px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  height: 664px;
+}
+
+.me-slider > div{
+  width: calc(50% - 16px);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.me-slider > div > img{
+  height: 276px;
+}
+
+.me-slider-left > img{
+  border-top-left-radius: 35px;
+}
+
+.me-slider-right > img{
+  border-top-right-radius: 35px;
+}
+
+.me-slider > div > div{
+  width: 100%;
+  position: absolute;
+  top: 270px;
+  margin-bottom: 25px;
+}
+
+.me-slider-left > div{
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+.me-slider-right > div{
+  border-top-right-radius: 35px;
+}
+
+
+/* ---------------------------- ARTICLE MEXJAL ---------------------------------- */
+.me-article{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #cce0ff;
+  background: -moz-linear-gradient(top,  #cce0ff 0%, #cce0ff 79%, black 39%, black 39%, black 39%, black 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #cce0ff 0%, #cce0ff 79%,black 39%,black 39%,black 39%,black 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #cce0ff 0%, #cce0ff 79%,black 39%,black 39%,black 39%,black 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce0ff', endColorstr='black',GradientType=0 ); /* IE6-9 */
+}
+
+.me-article-text{
+  width: calc(100% - 32px);
+  padding: 16px 16px;
+}
+
+.me-article-text > h1{
+  font-size: 24px;
+  padding: 16px 0;
+}
+
+.me-article-text > h4{
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+.me-article-text > h4 > p > strong{
+  font-weight: bold !important;
+}
+
+.me-article-data{
+  width: calc(100% - 32px);
+  padding: 16px 16px;
+  padding-bottom: 32px;
+}
+
+.me-article-img{
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  background-image: url(../img/Mexjal/2-0.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.me-img-text{
+  width: calc(100% - 32px);
+  height: calc(176px - 32px);
+  background-color: white;
+  padding: 16px;
+  border-radius: 35px;
+  margin-top: -35px;
+  z-index: 1 !important;
+}
+
+
+/*-------------------------------- CORPORATE ------------------------ */
+
+/* ------------------------------- OPERADORA ------------------------ */
+
+.me-slider-cont{
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  background-color: cyan;
+}
+
