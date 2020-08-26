@@ -5,6 +5,10 @@
     flex-direction: row;
   }
 
+  .me-data > p{
+    width: calc(50% - 21px);
+  }
+
   .me-data > hr{
     height: 20vh !important;
     margin-left: 10px;
@@ -81,7 +85,7 @@
   }
 
   .me-section-img{
-    padding: 25px 100px;
+    padding: 25px 50px;
     padding-left: 100px;
   }
 
@@ -153,6 +157,7 @@
 
   /*---------------------------- ARTICLE MEXJAL --------------------------------*/
   .me-article{
+    display: flex !important;
     width: 100%;
     flex-direction: row;
   }
@@ -163,7 +168,21 @@
   }
 
   .me-article-data{
-    width: auto;
     padding: 100px 100px 25px 25px;
+  }
+
+  /* ---------------------- OPERADORA -------------------- */
+
+  .slides{
+    padding: 50px 0;
+    justify-content: center;
+  }
+
+  .slides > div {
+    width: calc(50% - 100px);
+  }
+
+  .slider > a{
+    display: none;
   }
 }

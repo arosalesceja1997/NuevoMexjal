@@ -6,6 +6,14 @@
   /* font-weight: 500; */
 }
 
+label{
+  color: #000;
+  font-size: 16px;
+  font-weight: bolder;
+  text-shadow: 1px 0 #000;
+  letter-spacing:2px;
+}
+
 p{
   font-size: 18px;
   font-weight: 800;
@@ -408,6 +416,14 @@ h4{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cce0ff', endColorstr='black',GradientType=0 ); /* IE6-9 */
 }
 
+#consolidador{
+  background: #FFAD4E;
+  background: -moz-linear-gradient(top,  #FFAD4E 0%, #FFAD4E 79%, black 39%, black 39%, black 39%, black 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #FFAD4E 0%, #FFAD4E 79%,black 39%,black 39%,black 39%,black 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #FFAD4E 0%, #FFAD4E 79%,black 39%,black 39%,black 39%,black 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFAD4E', endColorstr='black',GradientType=0 ); /* IE6-9 */
+}
+
 .me-article-text{
   width: calc(100% - 32px);
   padding: 16px 16px;
@@ -457,6 +473,95 @@ h4{
 
 
 /*-------------------------------- CORPORATE ------------------------ */
+
+/* --------------------------- Login -------------------------- */
+.me-log{
+  min-height: 400px !important;
+}
+
+.me-login{
+  margin: 25px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.me-login-img{
+  width: 30%;
+  height: 300px;
+  border-radius: 35px;
+  background-image: url(../img/Login/1-0.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.me-login-data{
+  width: calc(70% + 25px);
+  height: 300px;
+  background-color: white;
+  margin-left: -25px;
+  z-index: 0;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.me-login-data > div{
+  padding: 15px 25px 5px 50px;
+}
+
+.me-login-two{
+  display: flex;
+  flex-direction: row;
+}
+
+.me-login-two > div{
+  width: 50%;
+}
+
+.me-login-two > div:last-child{
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+.me-input{
+  border: none;
+  color: #000;
+  padding: 5px 0 0 0;
+  font-weight: bold;
+  /* border-bottom: 1px solid black; */
+}
+
+.me-log-line{
+  height:2px;
+  background-color:#1D1D1D;
+  border: none;
+  margin: 25px 0;
+}
+
+.line{
+  margin: 5px 0;
+}
+
+.me-login-data > div > a{
+  font-style: bold;
+  font-size: 18px;
+  padding: 25px 100px;
+  color: #000;
+}
+
+.new-data > div:first-child > input{
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  margin-bottom: 25px;
+}
+
+.new-data{
+  display: flex;
+  width: calc(100% - 200px);
+  flex-direction: column !important;
+}
 
 /* ------------------------------- OPERADORA ------------------------ */
 
@@ -531,6 +636,7 @@ h4{
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: 25px;
 }
 
 .slides::-webkit-scrollbar {
@@ -564,8 +670,8 @@ h4{
 
 .slider > a {
   display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   background: white;
   text-decoration: none;
   align-items: center;
@@ -574,9 +680,16 @@ h4{
   margin: 0 0 0.5rem 0;
   position: relative;
 }
+
+.slider > a:visited {
+  /* background-color: gray; */
+}
+
 .slider > a:active {
   top: 1px;
+  background-color: gray;
 }
+
 .slider > a:focus {
   background: #000;
 }
