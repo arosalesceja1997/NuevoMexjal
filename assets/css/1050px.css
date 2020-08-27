@@ -185,4 +185,10 @@
   .slider > a{
     display: none;
   }
+
+  .new-data {
+    display: flex;
+    width: calc(100% - 200px);
+    flex-direction: column !important;
+  }
 }
