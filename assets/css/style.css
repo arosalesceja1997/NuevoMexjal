@@ -32,6 +32,7 @@ input{
 }
 
 a{
+  text-decoration: none;
   outline: none;
   color: #000;
   font-weight: bold;
@@ -755,43 +756,31 @@ h4{
 }
 
 
-
-.slider {
-  width: 50%;
-  height: 100px;
-	margin: auto;
-	overflow: hidden;
+/* ------------------ Movil menu ---------------- */
+.me-menu-mv{
+  display: none;
+  width: calc(100%);
+  background-color: transparent;
 }
 
-.slider ul {
-	display: flex;
-	padding: 0;
-	width: 100%;
-
-	animation: cambio 20s infinite alternate linear;
+.me-menu-mv > ul{
+  width: calc(100% - 32px);
+  padding: 25px 16px;
+  background-color: white;
+  border-radius: 35px;
 }
 
-.slider li {
-	width: 100%;
-	list-style: none;
+.me-menu-mv > ul > li{
+  padding: 10px 0;
 }
 
-.slider img {
-	width: 100%;
+.me-menu-mv > ul > li:not(:last-child){
+  padding: 10px 0;
+  border-bottom: 1px solid black;
 }
 
-@keyframes cambio {
-	0% {margin-left: -100%;}
-	50% {margin-left: -100%;}
-
-	50% {margin-left: -100%;}
-	100% {margin-left: -100%;}
-
-	/* 50% {margin-left: -200%;}
-	70% {margin-left: -200%;} */
-
-	/* 75% {margin-left: -300%;}
-	100% {margin-left: -300%;} */
+.me-menu-mv > ul > li > a > img{
+  float: right;
 }
 
 

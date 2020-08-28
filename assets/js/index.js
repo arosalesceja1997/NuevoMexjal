@@ -17,12 +17,15 @@
 
 // });
 
-// $(window).resize(function () {
-//   //aqui el codigo que se ejecutara cuando se redimencione la ventana
-//   var alto = $(window).height();
-//   var ancho = $(window).width();
-//   console.log(alto);
-// });
+$(window).resize(function () {
+  //aqui el codigo que se ejecutara cuando se redimencione la ventana
+  var alto = $(window).height();
+  var ancho = $(window).width();
+  if (ancho > 1050) {
+    $(".me-menu-mv").toggle();
+    $("#me-title-toggle").toggle();
+  }
+});
 $(document).ready(function () { //Hacia arriba
   irArriba();
 });
@@ -34,4 +37,9 @@ function irArriba() {
   });
   $('.ir-abajo').click(function () { $('body,html').animate({ scrollTop: '1000px' }, 1000); });
 }
+
+$("#me-show-menu").click(function () {
+  $(".me-menu-mv").toggle();
+  $("#me-title-toggle").toggle();
+});
 
