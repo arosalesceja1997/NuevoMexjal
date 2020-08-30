@@ -811,7 +811,7 @@ h4 {
   padding: 25px 16px;
   display: flex;
   flex-direction: column;
-  background-color: #5597FF;
+  background-color: #5597ff;
 }
 
 .me-mensaje-img {
@@ -839,7 +839,6 @@ h4 {
   margin: 5px 0 5px 16px;
 }
 
-
 /* ------------------ Movil menu ---------------- */
 .me-menu-mv {
   display: none;
@@ -866,7 +865,6 @@ h4 {
 .me-menu-mv>ul>li>a>img {
   float: right;
 }
-
 
 /* Don't need button navigation */
 @supports (scroll-snap-type) {
@@ -966,4 +964,237 @@ h4 {
 .td-tb-tarifas {
   width: 187px;
   padding: 0px 163px 0px 50px;
+}
+
+/*Mensaje */
+
+.msg-section {
+  height: 100%;
+  margin-top: -380px;
+  padding-bottom: 100px;
+}
+
+.msg-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 17px 24px -19px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 0px 17px 24px -19px rgba(0, 0, 0, 0.67);
+  box-shadow: 0px 17px 24px -19px rgba(0, 0, 0, 0.67);
+}
+
+.img-cont {
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+}
+
+.info-cont {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.msg-info-pattern {
+  margin: 0px 22px 0px 22px;
+  width: calc(100%-44px);
+  background-color: white;
+}
+
+.msg-info-child1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "agencia agencia"
+    "ubicacion ubicacion"
+    "ciudad ciudad"
+    "estado cp";
+}
+
+.msg-info-child2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  grid-template-areas:
+    "agente agente"
+    "telefono telefono"
+    "email email"
+    "mensaje mensaje";
+}
+
+.msg-item {
+  width: 100%;
+  height: 48px;
+  display: block;
+}
+
+.item-msg {
+  width: 100%;
+  height: 100px;
+}
+
+#ubicacion,
+#ciudad,
+#estado,
+#agencia,
+#cp,
+#agente,
+#telefono,
+#email,
+#mensaje {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#agencia {
+  grid-area: agencia;
+  border-bottom: 1px solid #1D1D1D;
+}
+
+#ubicacion {
+  grid-area: ubicacion;
+  border-bottom: 1px solid #1D1D1D;
+}
+
+#ciudad {
+  grid-area: ciudad;
+  border-bottom: 1px solid #1D1D1D;
+}
+
+#estado {
+  grid-area: estado;
+  border-bottom: 0px solid #1D1D1D;
+  border-right: 0px solid #1D1D1D;
+}
+
+#cp {
+  grid-area: cp;
+  border-bottom: 0px solid #1D1D1D;
+  border-left: 1px solid #1D1D1D;
+}
+
+#agente {
+  grid-area: agente;
+  border-bottom: 1px solid #1D1D1D;
+}
+
+#telefono {
+  grid-area: telefono;
+  border-bottom: 1px solid #1D1D1D;
+}
+
+#email {
+  grid-area: email;
+  border-bottom: 1px solid #1D1D1D;
+}
+
+#mensaje {
+  grid-area: mensaje;
+}
+
+.op-msg {
+  text-align: left;
+  font: italic normal normal 16px/20px IBM Plex Sans;
+  letter-spacing: 0.8px;
+  color: #1D1D1D;
+  opacity: 1;
+}
+
+#ag>div>input,
+#ub>div>input,
+#ci>div>input,
+#es>div>input,
+#cp-child>div>input,
+#agen>div>input,
+#te>div>input,
+#em>div>input,
+#me>div>textarea {
+  width: 100%;
+  border: 0px;
+}
+
+#me>div>textarea {
+  overflow-x: hidden;
+  resize: none;
+  height: 70px;
+}
+
+#me>div>textarea:focus {
+  border: 0px;
+  color: red;
+}
+
+
+
+#ag,
+#ub,
+#ci,
+#es,
+#cp-child,
+#agen,
+#te,
+#me {
+  overflow: hidden;
+}
+
+#cp-child {
+  padding-left: 25px;
+}
+
+/********/
+
+.btn-subscribe-container {
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.textBlu-btn-suscribe,
+.textBla-btn-suscribe {
+  text-align: left;
+  font: italic normal bold 18px/23px IBM Plex Sans;
+  letter-spacing: 0.9px;
+  color: #5597ff;
+}
+
+#radio-1 {
+  width: 24px;
+  height: 24px;
+}
+
+.textBla-btn-suscribe {
+  color: #1d1d1d;
+  margin-left: 16px;
+}
+
+/********/
+
+.borderTop {
+  border-top: 1px solid #1D1D1D;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #1D1D1D;
+}
+
+.borderRight {
+  border-right: 1px solid #1D1D1D;
+}
+
+.borderLeft {
+  border-left: 1px solid #1D1D1D;
+}
+
+.pt-25 {
+  padding-top: 25px;
 }
