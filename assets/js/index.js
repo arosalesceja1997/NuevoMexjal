@@ -22,8 +22,8 @@ $(window).resize(function () {
   var alto = $(window).height();
   var ancho = $(window).width();
   if (ancho > 1050) {
-    $(".me-menu-mv").toggle();
-    $("#me-title-toggle").toggle();
+    $(".me-menu-mv").hide();
+    $("#me-title-toggle").show();
   }
 });
 $(document).ready(function () { //Hacia arriba

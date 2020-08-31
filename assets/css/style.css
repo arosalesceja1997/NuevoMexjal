@@ -79,10 +79,6 @@ a {
   padding: 0 5px;
 }
 
-.me-top-data {
-  height: 278px;
-}
-
 .me-menu-movil {
   display: flex;
   flex-direction: column;
@@ -143,11 +139,12 @@ a {
   width: 200px;
   height: 50px;
   border: 2px solid black;
+  background-color: white;
   border-radius: 35px;
   padding: 0 25px 0 25px;
   z-index: 1;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .ma-buttons input:hover~div {
@@ -297,13 +294,6 @@ a {
 
 /* End background color */
 
-.me-line {
-  height: 2px;
-  border-width: 0;
-  background-color: black;
-  margin: 25px 0 10px 0;
-}
-
 /* Fonts H1,H2,H3,H4,H5 */
 h1 {
   font-size: 32px;
@@ -420,9 +410,8 @@ h4 {
 
 /* -------------------------- ASSISTMED -------------------------------- */
 .me-top-data {
-  margin-top: -2px;
+  /* margin-top: -2px; */
   width: auto;
-  height: 285px;
 }
 
 .me-top-data>div:not(:last-child) {
@@ -552,9 +541,12 @@ h4 {
   z-index: -1;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
-  background-image: url(../img/Mexjal/2-0.png);
+  background-image: url(../img/Mexjal/2-2.png);
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -689,13 +681,13 @@ h4 {
 
 #slide-1>.me-slider-img {
   border-top-left-radius: 35px;
-  background-image: url(../img/Operadora/2-0.png);
+  background-image: url(../img/Operadora/2-2.png);
   margin-left: 32px;
 }
 
 #slide-2>.me-slider-img {
   border-top-right-radius: 35px;
-  background-image: url(../img/Operadora/3-0.png);
+  background-image: url(../img/Operadora/3-2.png);
   margin-right: 32px;
 }
 
@@ -967,3 +959,25 @@ h4 {
   width: 187px;
   padding: 0px 163px 0px 50px;
 }
+
+.me-line {
+  height: 2px;
+  border-width: 0;
+  background-color: black;
+  margin: 25px 0 10px 0;
+}
+
+.me-line-mid{
+  height:1px;
+  border: none;
+  background-color:gray;
+  margin: 25px 0;
+}
+
+.me-line-end{
+  height: 2px;
+  border: none;
+  background-color: black;
+  margin: 25px 0;
+}
+

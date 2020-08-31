@@ -169,6 +169,7 @@
 
   .me-article-data{
     padding: 100px 100px 25px 25px;
+    width: calc(50%);
   }
 
   /* ---------------------- OPERADORA -------------------- */

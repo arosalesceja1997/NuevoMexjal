@@ -1,14 +1,16 @@
 Options All -Indexes
 
-
+#RewriteBase /
 RewriteEngine On
-RewriteRule ^([-a-zA-Z0-9/]+)$ view/$1.html
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([-a-zA-Z0-9/]+)$ /view/$1.html
 
 #SSL
-#RewriteCond %{HTTP_HOST} !^$
-#RewriteCond %{HTTP_HOST} !^www\. [NC]
-#RewriteCond %{HTTPS} !on
-#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
 # asegurando el archivo htaccess
 #<Files .htaccess>
