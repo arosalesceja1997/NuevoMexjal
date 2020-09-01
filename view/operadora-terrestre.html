@@ -18,12 +18,12 @@
     <nav class="me-menu" style="background-color: #22CE6B; height: 200px;">
       <div class="me-menu-encabezado">
         <div style="padding-bottom: 10px">
-          <img src="../assets/icons/mexjal.svg" alt="" width="100">
+          <a href="/"><img src="../assets/icons/mexjal.svg" width="100"></a>
         </div>
         <div class="me-nav-icons">
-          <img src="../assets/icons/home-24px.svg" />
+          <a href="/"><img src="../assets/icons/home-24px.svg" /></a>
           <img src="../assets/icons/chat_bubble_outline-24px.svg" />
-          <img src="../assets/icons/Icono-Menú.svg" class="me-hamburguesa" />
+          <img src="../assets/icons/Icono-Menú.svg" id="me-show-menu" class="me-hamburguesa" />
         </div>
         <div style="width: 100%; float: left;">
           <hr class="me-line" style="margin: 10px 0;">
@@ -170,12 +170,15 @@
             <li><img src="../assets/icons/laT.svg" alt="" width="25"></li>
           </ul>
           <ul class="me-arrow">
-            <li><i class="fas fa-arrow-up"></i></li>
+            <li><img src="../assets/icons/arriva.svg" class="ir-arriba" alt="" width="35"></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>

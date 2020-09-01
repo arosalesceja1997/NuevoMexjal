@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Consolidador</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/1050px.css">
 
@@ -18,10 +18,10 @@
     <nav class="me-menu" style="background-color: #FFAD4E;">
       <div class="me-menu-encabezado">
         <div style="padding-bottom: 10px">
-          <img src="assets/icons/consolidador.svg" alt="" width="100">
+          <a href="/"><img src="assets/icons/consolidador.svg" alt="" width="100"></a>
         </div>
         <div class="me-nav-icons">
-          <img src="assets/icons/home-24px.svg" />
+          <a href="/"><img src="assets/icons/home-24px.svg" /></a>
           <img src="assets/icons/chat_bubble_outline-24px.svg" />
           <img src="assets/icons/Icono-Menú.svg" id="me-show-menu" class="me-hamburguesa" />
         </div>
@@ -71,7 +71,7 @@
       </div>
 
       <div class="ma-buttons">
-        <input type="button" value="Contáctanos">
+        <input type="button" value="Contáctanos"onclick="location.href='mensaje';">
         <div class="ma-btn-transiton" style="background-color: #FFAD4E;">
           <i class="far fa-long-arrow-right"></i>
         </div>
@@ -137,16 +137,39 @@
         <div class="me-article-img" style="background-image: url(assets/img/Consolidador/2-0.png);">
         </div>
         <div class="me-img-text">
-          <p>
-            Contamos con la confianza de estas compañías aéreas.
-          </p>
-          <a href="#">VER TODAS</a>
+          <p>Contamos con la confianza de estas compañías aéreas.</p>
+          <a id="me-show-div">VER TODAS</a>
 
           <div class="me-line"></div>
 
           <div class="me-carrusel-aut">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quibusdam ipsam atque nisi ducimus. Eveniet
-            pariatur nam, quidem quo voluptas cum. Odit eaque dignissimos cum, tempora blanditiis sapiente ab omnis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            quibusdam ipsam atque nisi ducimus. Eveniet pariatur nam, quidem
+            quo voluptas cum. Odit eaque dignissimos cum, tempora blanditiis
+            sapiente ab omnis.
+          </div>
+        </div>
+
+        <div class="me-show-text">
+          <div>
+            <div>
+              <a id="me-close"><img src="assets/icons/cerrar.svg" /></a>
+            </div>
+            <div>
+              <p>
+                • Aeroméxico <br> 
+                • Air France <br> 
+                • American Airlines <br> 
+                • All Nippon <br>
+                • Aeromar <br>
+                • British airways <br> 
+                • Copa Airlines <br>
+                • Delta Airlines <br>
+                • Emirates <br>
+                • Iberia <br><br>
+                — Y muchas más… <br>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -184,8 +207,8 @@
     </div>
   </div>
 
-  <script src="../assets/js/jquery-3.5.1.min.js"></script>
-  <script src="../assets/js/index.js"></script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>

@@ -43,3 +43,10 @@ $("#me-show-menu").click(function () {
   $("#me-title-toggle").toggle();
 });
 
+$("#me-close").click(function () {
+  $(".me-show-text").hide();
+});
+
+$("#me-show-div").click(function () {
+  $(".me-show-text").show();
+});
