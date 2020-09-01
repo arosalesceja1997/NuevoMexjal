@@ -563,7 +563,6 @@ h4 {
 }
 
 .me-show-text{
-  display: none;
   position: absolute;
   bottom: 0;
   width: calc(100% - 64px);
@@ -1228,4 +1227,40 @@ h4 {
 
 .pt-25 {
   padding-top: 25px;
+}
+
+.me-slider-new{
+  width: 100%;
+}
+
+.me-slider-new > ul{
+  display: flex;
+  width: 200%;
+
+  animation: cambio 10s infinite;
+}
+
+.me-slider-new > ul > li{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.me-logos-ex{
+  width: 120px;
+  height: 80px;
+}
+
+@keyframes cambio {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+
+  25% { margin-left: -50%;}
+  45% { margin-left: -50%;}
+
+  50% { margin-left: -100%;}
+  70% { margin-left: -100%;}
+
+  75% { margin-left: -100%;}
+  100% { margin-left: -100%;}
 }
