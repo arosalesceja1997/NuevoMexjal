@@ -31,3 +31,38 @@ $("#me-close").click(function () {
 $("#me-show-div").click(function () {
   $(".me-show-text").show();
 });
+
+$("#me-send-mensaje").click(function () {
+  let agencia = $("#me-agencia").val();
+  let ubicacion = $("#me-ubicacion").val();
+  let ciudad = $("#me-ciudad").val();
+  let estado = $("#me-ciudad").val();
+  let cp = $("me-cp").val();
+  let telefono = $("#me-telefono").val();
+  let mail = $("#me-mail").val();
+  let mensaje = $("#me-data-mensaje").val();
+  let agente = $("#me-agente").val();
+
+  $.ajax({
+    url: "http://aliat.herokuapp.com/api/index/contact",
+    type: "Post",
+    data: JSON.stringify({
+      name: agente,
+      email: mail,
+      phone: telefono,
+      message: `${agencia} | ${ubicacion} | ${ciudad} | ${estado} | ${cp} | ${mensaje}`,
+      source: "5f4848f9fc3e867433f8ace0",
+      public_key: "duDJQV580jkdveLln5V3SHEcyTBcfMpr"
+    }),
+    contentType: 'application/json; charset=utf-8',
+    success: function (data) {
+      alert('Registro aregado exitosamente !!!');
+    },
+    failure: function (data) {
+      alert(data.responseText);
+    },
+    error: function (data) {
+      alert(data.responseText);
+    }
+  });
+});
