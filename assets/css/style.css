@@ -40,7 +40,8 @@ a {
 }
 
 .me-container {
-  width: 100%;
+  width: calc(100% - 50px);
+  float: left;
 }
 
 /* Nav bar */
@@ -386,6 +387,7 @@ h4 {
   width: 100%;
 }
 
+
 .me-img-maps>input {
   position: absolute;
   top: 60%;
@@ -402,6 +404,7 @@ h4 {
   font-size: 16px;
   font-weight: bold;
   overflow-y: none;
+  cursor: pointer;
 }
 
 /* End maps */
@@ -1263,4 +1266,18 @@ h4 {
 
   75% { margin-left: -100%;}
   100% { margin-left: -100%;}
+}
+
+
+.me-nav-right{
+  width: 50px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: -16px;
+}
+.me-nav-right > ul > li >a{
+  font-size: 11px;
+  writing-mode: vertical-lr;
 }

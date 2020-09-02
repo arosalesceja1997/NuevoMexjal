@@ -44,7 +44,10 @@ $("#me-send-mensaje").click(function () {
   let agente = $("#me-agente").val();
 
   $.ajax({
-    url: "http://aliat.herokuapp.com/api/index/contact",
+    url: "https://aliat.herokuapp.com/api/index/contact",
+    headers: {
+      'Accept-Language': 'es_MX',
+    },
     type: "Post",
     data: JSON.stringify({
       name: agente,
@@ -66,3 +69,8 @@ $("#me-send-mensaje").click(function () {
     }
   });
 });
+
+function maps(){
+  let dir = "https://www.google.com/maps/place/Calle+Justo+Sierra+2593,+Arcos+Vallarta,+44130+Guadalajara,+Jal./@20.6774845,-103.3846777,17z/data=!3m1!4b1!4m5!3m4!1s0x8428ae6d283e1f79:0xe51e4e355db325d0!8m2!3d20.6774845!4d-103.382489";
+  window.location = dir;
+}
