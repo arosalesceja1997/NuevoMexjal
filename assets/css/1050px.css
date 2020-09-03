@@ -1,5 +1,24 @@
 /* Querys */
 @media only screen and (min-width: 1050px) {
+  .me-container {
+    width: calc(96%);
+    float: left;
+  }
+  
+  .me-nav-right {
+    width: 4%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: -16px;
+  }
+  
+  .me-nav-right > ul > li > a {
+    font-size: 11px;
+    writing-mode: vertical-lr;
+  }
+
   .me-data {
     display: flex;
     flex-direction: row;
@@ -318,9 +337,11 @@
   .me-login-data{
     width: calc(70% + 25px);
     margin-left: -25px;
+    border-radius: 0px;
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
-    margin-left: 0;
+    margin-left: -35px;
+
   }
 
   .me-log{
