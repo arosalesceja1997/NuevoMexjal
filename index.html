@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/1050px.css">
+  <link rel="stylesheet" href=".assets/css/style.css">
+  <link rel="stylesheet" href=".assets/css/1050px.css">
 
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -19,16 +19,16 @@
 
 <body>
   <div class="me-container">
-    <nav class="me-menu" id="me1" style="background-color: #5597ff;">
+    <nav class="me-menu" id="me1" style="background-color: #5597FF;">
       <div class="me-menu-encabezado">
         <div style="padding-bottom: 10px">
-          <a href="/"><img src="assets/icons/mexjal.svg" width="100"></a>
+          <a href="/"><img src="assets/icons/mexjal.svg" width="150"></a>
         </div>
         <div class="me-nav-icons">
           <a href="/"><i class="fas fa-home"></i></a>
-          <img src="./assets/icons/chat_bubble_outline-24px.svg" />
-          <img src="./assets/icons/Icono-Menú.svg" id="me-show-menu" class="me-hamburguesa" />
-          
+          <img src=".assets/icons/chat_bubble_outline-24px.svg" />
+          <img src=".assets/icons/Icono-Menú.svg" id="me-show-menu" class="me-hamburguesa" />
+
         </div>
         <div style="width: 100%; float: left;">
           <hr class="me-line" style="margin: 10px 0;">
@@ -73,30 +73,36 @@
         <h1 id="me-title-toggle">
           Cumple con las exigencias de tus clientes.
           <br>
-          Gracias a Mexjal.
+          <span class="font-strong">Gracias a Mexjal.</span>
         </h1>
       </div>
 
       <div class="ma-buttons">
         <input type="button" value="Contáctanos" onclick="location.href='mensaje';">
         <div class="ma-btn-transiton" style="background-color: #5597FF;">
-          <img src="./assets/icons/Icono.svg" class="icon" width="35">
+          <img src=".assets/icons/Icono.svg" class="icon" width="35">
         </div>
       </div>
     </div>
 
-    <div class="me-data padd">
-      <p>
-        Con nuestros servicios, queremos ayudarte a encontrar las mejores soluciones a los requerimientos de tus
-        clientes.
-        <br> — <br>
-        En Mexjal somos capaces de crear opciones inteligentes e innovadoras de viajes que harán crecer a nuestros
-        aliados y clientes.
-      </p>
-      <hr style="height:2px;background-color:gray; margin-bottom: 25px;">
-      <h4>
-        Con Mexjal encuentra más que un consolidador, encuentra la solución a tus problemas.
-      </h4>
+    <div class="me-section aux">
+      <div class="me-section-img dis-100">
+        <p>
+          Con nuestros servicios, queremos ayudarte a encontrar las mejores soluciones a los requerimientos de tus
+          clientes.
+          <br> — <br>
+          En Mexjal somos capaces de crear opciones inteligentes e innovadoras de viajes que harán crecer a nuestros
+          aliados y clientes.
+        </p>
+        <div style="margin-top: 30px;"></div>
+        <hr style="height:2px;background-color:gray; margin-bottom: 25px;">
+
+        <h3>Con Mexjal encuentra más que un consolidador, <span class="font-medium">encuentra la solución a tus
+            problemas.</span></h3>
+      </div>
+      <div class="me-section-data dis-none">
+        <img src="assets/img/Home/0.png" height="243" alt="" class="img-video">
+      </div>
     </div>
 
     <div id="me-operator" class="me-section">
@@ -108,7 +114,7 @@
       </div>
       <div class="me-section-data">
         <h1>
-          Operadora | <br>
+          <span class="font-strong-u">Operadora |</span><br>
           Mejoramos las expectativas de viaje de tus clientes.
         </h1>
         <hr class="me-line-mid">
@@ -121,13 +127,12 @@
           <div class="ma-buttons">
             <input type="button" value="Conoce más" onclick="location.href='/operadora';">
             <div class="ma-btn-transiton" style="background-color: #22CE6B;">
-              <img src="./assets/icons/Icono.svg" class="icon" width="35">
+              <img src=".assets/icons/Icono.svg" class="icon" width="35">
             </div>
           </div>
         </div>
       </div>
-    </div>|
-
+    </div>
     <div id="me-consilador" class="me-section">
       <div class="me-section-img naranja">
         <div class="me-section-logo">
@@ -137,7 +142,7 @@
       </div>
       <div class="me-section-data">
         <h1>
-          Consolidador | <br>
+          <span class="font-strong-u">Consolidador | </span><br>
           Vamos más allá de los que tus clientes podrían soñar.
         </h1>
         <hr class="me-line-mid">
@@ -150,7 +155,7 @@
           <div class="ma-buttons">
             <input type="button" value="Conoce más" onclick="location.href='/consolidador';">
             <div class="ma-btn-transiton" style="background-color: #FFAD4E;">
-              <img src="./assets/icons/Icono.svg" class="icon" width="35">
+              <img src=".assets/icons/Icono.svg" class="icon" width="35">
             </div>
           </div>
         </div>
@@ -166,7 +171,7 @@
       </div>
       <div class="me-section-data">
         <h1>
-          Corporate | <br>
+          <span class="font-strong-u">Corporate | </span><br>
           Mexjal, ¡la mejor opción para viajar!
         </h1>
         <hr class="me-line-mid">
@@ -181,7 +186,7 @@
           <div class="ma-buttons">
             <input type="button" value="Conoce más" onclick="location.href='/mexjal';">
             <div class="ma-btn-transiton" style="background-color: #5597FF;">
-              <img src="./assets/icons/Icono.svg" class="icon" width="35">
+              <img src=".assets/icons/Icono.svg" class="icon" width="35">
             </div>
           </div>
         </div>
@@ -197,7 +202,7 @@
       </div>
       <div class="me-section-data">
         <h1>
-          Consolidador | <br>
+          <span class="font-strong-u">Assist-med | </span><br>
           Vamos más allá de los que tus clientes podrían soñar.
         </h1>
         <hr class="me-line-mid">
@@ -210,7 +215,7 @@
           <div class="ma-buttons">
             <input type="button" value="Conoce más" onclick="location.href='/assist';">
             <div class="ma-btn-transiton" style="background-color: #FF4343;" onclick="location.href='/assist';">
-              <img src="./assets/icons/Icono.svg" class="icon" width="35">
+              <img src=".assets/icons/Icono.svg" class="icon" width="35">
             </div>
           </div>
         </div>
@@ -228,7 +233,7 @@
         <div class="ma-buttons">
           <input type="button" value="Contáctanos" onclick="location.href='mensaje';">
           <div class="ma-btn-transiton" style="background-color: black;">
-            <img src="./assets/icons/IconoWhite.svg" class="icon" width="35">
+            <img src=".assets/icons/IconoWhite.svg" class="icon" width="35">
           </div>
         </div>
       </div>
