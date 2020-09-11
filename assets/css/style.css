@@ -378,7 +378,7 @@ h4 {
 
 #me-maps>div>img {
   object-fit: none;
-  /* object-position: 100% 100%; */
+  object-position: 50% 40%;
   width: 100%;
   margin-top: 100px;
   margin-bottom: 35px;

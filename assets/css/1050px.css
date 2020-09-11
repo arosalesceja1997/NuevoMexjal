@@ -11,12 +11,12 @@
     display: flex;
     align-items: center;
     position: fixed;
-    right: -16px;
+    right: 0;
   }
 
   .me-nav-right>ul>li>a {
     font-size: 14px;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-lr !important;
     letter-spacing: 0.6px;
   }
 
