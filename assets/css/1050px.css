@@ -74,7 +74,10 @@
   }
 
   .me-arrow {
-    display: none !important;
+    display: block !important;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
   }
 
   .me-flecha {
