@@ -1373,3 +1373,19 @@ h4 {
   background: linear-gradient(to bottom, white 0%, white 79%, black 39%, black 39%, black 39%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='black', GradientType=0);
 }
+
+.loghome{
+  float: right;
+  width: 100%;
+}
+
+.loghome > input{
+  height: 40px;
+  float: right;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+.acceder{
+  /* // ffsd */
+}
